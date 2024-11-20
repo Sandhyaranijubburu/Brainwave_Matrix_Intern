@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    background-color: #000;
+    line-height: 1.6;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.header{
+    background:black;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.logo{
+    height: 50px;
+}
+.btn-signin{
+    background-color: #e50914;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.hero{
+    background: url("hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.hero-content h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.email-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.email-form input{
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    width: 300px;
+    border-radius: 3px 0 0 3px;
+}
+.btn-start{
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+.features{
+    padding: 50px 20px;
+}
+.movie{
+    display: flex;
+    margin-bottom: 40px;
+}
+.movie img{
+    width: 50%;
+    border-radius: 5px;
+}
+.movie-text{
+    padding: 20px;
+}
+.movie-text h2{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+.movie-text p{
+    font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+    .movie {
+        display: grid;
+        grid-template-columns: auto;
+
+    }
+    .movie img {
+        width: 100%; 
+    }
+}
+.footer{
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+.footer-links{
+    list-style: none;
+    padding: 0;
+}
+.footer-links li{
+    display: inline;
+    margin: 0 10px;
+}
